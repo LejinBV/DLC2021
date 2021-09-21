@@ -1,0 +1,28 @@
+$p-red: #be0028;
+$s-red: #ef233c;
+$black: #1a1a1a;
+$l-blue: #90e0ef;
+$m-blue: #00b4d8;
+$blue: #0077b6;
+$white: #fff;
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
+}
+
+.anim-ease-in {
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+}
