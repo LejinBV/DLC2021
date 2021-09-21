@@ -214,6 +214,10 @@ p{
     }
     .tab-content{
       .table-wrap{
+        p{
+          margin-top: 25px;
+          margin-bottom: 0;
+        }
         border: 1px solid $s-red;
         padding: 2.875rem;
         padding-bottom: 1.5rem;

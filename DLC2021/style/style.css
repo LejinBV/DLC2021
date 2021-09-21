@@ -286,6 +286,11 @@ p {
   padding-top: 1.5rem;
 }
 
+.agenda .tab-wrap .tab-content .table-wrap p {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 767px) {
   .agenda .tab-wrap .tab-content .table-wrap {
     padding: 1.5rem;
