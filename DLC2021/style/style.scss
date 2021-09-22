@@ -341,23 +341,34 @@ p{
   background: $m-blue;
 
   .video-poster{
-    display: block;
     background:url(../images/collaboration-t2.png) right;
     background-size: cover;
-    height: 600px;
+    height: 700px;
     position: relative;
+    width: 100%;
+    @media (max-width:767px) {
+      height: 250px;
+    }
     span {
-      position: absolute;
-      left: 3rem;
-      bottom: 3rem;
       width: 140px;
+      display: block;
+      height: 140px;
+      margin: auto;
     }
   }
   .text-wrap{
     margin-top: auto;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     padding-left: 4rem;
     color: $white;
+    margin-right: 4rem;
+    @media (max-width:767px) {
+      margin: 0;
+      padding:4rem 2rem ;
+    }
+    a{
+      color: $white;
+    }
   }
 }
 
@@ -376,7 +387,8 @@ p{
 		height: 50px;
 		color: #fff;
 		border-radius: 0;
-		z-index: 100;
+		z-index: 2000;
+    pointer-events: all;
 		&::before {
 			color: #fff;
 			font-size: 26px;
@@ -417,7 +429,8 @@ p{
   background: #EF233C;
   border-radius: 0;
   opacity: 1;
-  z-index: 100;
+  z-index: 2000;
+  pointer-events: visible;
 }
 .id-modal .modal-content .embed-responsive {
   height: 100%;
