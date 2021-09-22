@@ -433,24 +433,42 @@ p {
 }
 
 .teaser-video-wrap .video-poster {
-  display: block;
   background: url(../images/collaboration-t2.png) right;
   background-size: cover;
-  height: 600px;
+  height: 700px;
   position: relative;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .teaser-video-wrap .video-poster {
+    height: 250px;
+  }
 }
 
 .teaser-video-wrap .video-poster span {
-  position: absolute;
-  left: 3rem;
-  bottom: 3rem;
   width: 140px;
+  display: block;
+  height: 140px;
+  margin: auto;
 }
 
 .teaser-video-wrap .text-wrap {
   margin-top: auto;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   padding-left: 4rem;
+  color: #fff;
+  margin-right: 4rem;
+}
+
+@media (max-width: 767px) {
+  .teaser-video-wrap .text-wrap {
+    margin: 0;
+    padding: 4rem 2rem;
+  }
+}
+
+.teaser-video-wrap .text-wrap a {
   color: #fff;
 }
 
@@ -469,7 +487,8 @@ p {
   height: 50px;
   color: #fff;
   border-radius: 0;
-  z-index: 100;
+  z-index: 2000;
+  pointer-events: all;
 }
 
 .video-pp .btn-close::before {
@@ -515,7 +534,8 @@ p {
   background: #EF233C;
   border-radius: 0;
   opacity: 1;
-  z-index: 100;
+  z-index: 2000;
+  pointer-events: visible;
 }
 
 .id-modal .modal-content .embed-responsive {
