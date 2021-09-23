@@ -453,6 +453,11 @@ p {
   margin: auto;
 }
 
+.teaser-video-wrap .video-poster.teaser-2 {
+  background: url(../images/teaser-2.png);
+  background-size: cover;
+}
+
 .teaser-video-wrap .text-wrap {
   margin-top: auto;
   padding-bottom: 5rem;
