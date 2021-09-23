@@ -355,6 +355,10 @@ p{
       height: 140px;
       margin: auto;
     }
+    &.teaser-2{
+      background: url(../images/teaser-2.png);
+      background-size: cover;
+    }
   }
   .text-wrap{
     margin-top: auto;
