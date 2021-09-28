@@ -14,7 +14,7 @@ img {
   }
 }
 
-.anim-ease-in {
+.anim-ease-in, .pre-event .status {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -23,6 +23,11 @@ img {
 html {
   font-size: 20px;
   font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+  color: #ef233c;
+  text-decoration: none;
 }
 
 * {
@@ -458,6 +463,11 @@ p {
   background-size: cover;
 }
 
+.teaser-video-wrap .video-poster.teaser-3 {
+  background: url(../images/activity-3.jpg);
+  background-size: cover;
+}
+
 .teaser-video-wrap .text-wrap {
   margin-top: auto;
   padding-bottom: 5rem;
@@ -550,5 +560,232 @@ p {
 .id-modal .modal-content .embed-responsive iframe {
   height: 100%;
   width: 100%;
+}
+
+.pre-event {
+  background: url(../images/pre-bg.jpg) center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.pre-event .title-1 {
+  position: absolute;
+  left: 8%;
+  top: 8%;
+  max-width: 400px;
+}
+
+.pre-event .col-l {
+  min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .pre-event .col-l {
+    min-height: inherit;
+  }
+}
+
+.pre-event .col-r {
+  min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .pre-event .col-r {
+    min-height: inherit;
+  }
+}
+
+.pre-event svg {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .pre-event svg {
+    margin-top: 240px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pre-event svg {
+    margin-top: 308px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.pre-event circle {
+  fill: transparent;
+}
+
+.pre-event .text {
+  font-family: Roboto, sans-serif;
+  fill: #00b4d8;
+  font-size: 2px;
+  text-align: left;
+}
+
+.pre-event .st3 {
+  font-size: 62px;
+}
+
+.pre-event .carousel {
+  margin: auto;
+}
+
+.pre-event .carousel, .pre-event .carousel-inner {
+  width: 100%;
+}
+
+.pre-event .carousel-item {
+  width: 100%;
+}
+
+.pre-event .inner-wrap {
+  padding: 50px;
+  min-height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  .pre-event .inner-wrap {
+    min-height: 1030px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pre-event .inner-wrap {
+    min-height: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  .pre-event .inner-wrap {
+    padding: 4rem 2rem;
+  }
+}
+
+.pre-event .inner-wrap .slide-content {
+  margin: auto 0;
+}
+
+@media (max-width: 992px) {
+  .pre-event .inner-wrap .slide-content {
+    padding-bottom: 50px;
+  }
+}
+
+.pre-event .placeholder {
+  stroke: rgba(0, 180, 216, 0.6);
+}
+
+.pre-event .status {
+  stroke: #ef233c;
+}
+
+.pre-event .qrc {
+  max-width: 150px;
+}
+
+.pre-event .mst {
+  max-width: 300px;
+}
+
+.pre-event p {
+  font-size: 1.25rem;
+}
+
+.pre-event p i {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.pre-event ul li {
+  margin-bottom: 1.25rem;
+}
+
+.pre-event .button-wrap {
+  margin-top: 50px;
+}
+
+.pre-event .button-wrap .btn {
+  padding: 13px 30px;
+  color: #ef233c;
+  border: 3px solid #ef233c;
+  background: transparent;
+  border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .pre-event .button-wrap .btn {
+    display: block;
+  }
+}
+
+.pre-event .button-wrap .btn-controls {
+  padding: 13px;
+  border: 3px solid;
+  margin-left: -8px;
+}
+
+@media (max-width: 767px) {
+  .pre-event .button-wrap .btn-controls {
+    width: 50% !important;
+    float: left;
+    margin-left: 0px;
+  }
+}
+
+.pre-event .button-wrap .btn-controls.prev {
+  background: #1a1a1a;
+  color: #fff;
+  border: 3px solid #1a1a1a;
+  height: 62px;
+  width: 55px;
+  position: relative;
+}
+
+.pre-event .button-wrap .btn-controls.prev::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: 18px;
+  left: 16px;
+}
+
+.pre-event .button-wrap .btn-controls.prev.disabled {
+  color: #6f6666;
+}
+
+.pre-event .button-wrap .btn-controls.next {
+  border: 3px solid #ef233c;
+  background: #ef233c;
+  color: #fff;
+  height: 62px;
+  position: relative;
+  width: 55px;
+}
+
+.pre-event .button-wrap .btn-controls.next::before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 18px;
+  left: 16px;
+}
+
+@media (max-width: 767px) {
+  .pre-event .button-wrap .btn-controls.next::before {
+    left: inherit;
+    right: 16px;
+  }
+}
+
+.pre-event .button-wrap .btn-controls.next.disabled {
+  color: #fb9898;
 }
 /*# sourceMappingURL=style.css.map */
