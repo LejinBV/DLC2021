@@ -41,7 +41,7 @@ $('.option1').on('click', function () {
   $('#carouselExampleIndicatorsTwo').carousel('next')
 });
 
-$('#option2').on('click', function () {
+$('.option2').on('click', function () {
   var $opT = $(this);
   $('#status').css('stroke-dasharray', $opT.data('value'))
   $('#carouselExampleIndicatorsTwo').carousel('next')
@@ -53,21 +53,21 @@ $('.option3').on('click', function () {
   $('#carouselExampleIndicatorsTwo').carousel('next')
 });
 
-$('#option4').on('click', function () {
+$('.option4').on('click', function () {
   var $opF = $(this);
   $('#status').css('stroke-dasharray', $opF.data('value'))
   $('#carouselExampleIndicatorsTwo').carousel('next')
 });
 
 $('.option5').on('click', function () {
-  var $opF = $(this);
-  $('#status').css('stroke-dasharray', $opF.data('value'))
+  var $opFv = $(this);
+  $('#status').css('stroke-dasharray', $opFv.data('value'))
   $('#carouselExampleIndicatorsTwo').carousel('next')
 });
 
+
+
 $('#carouselExampleIndicatorsTwo').on('slide.bs.carousel', function (e) {
-  var currentIndex = $('.carousel-item.active');
   // do something…
-  console.log(currentIndex.data('index'));
-  $('.digit').html(currentIndex.data('index'));
+  $('.digit').text($(e.relatedTarget).attr('data-index'));
 });
