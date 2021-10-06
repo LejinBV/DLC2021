@@ -506,6 +506,12 @@ p {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  #videos {
+    margin-bottom: 60px;
+  }
+}
+
 .video-pp iframe {
   width: 100%;
   height: 448px;
