@@ -38,36 +38,36 @@ function onclickfunction() {
 $('.option1').on('click', function () {
   var $el = $(this);
   $('#status').css('stroke-dasharray', $el.data('value'))
-  $('#carouselExampleIndicatorsTwo').carousel('next')
+  $('#carouselExampleIndicatorsThree').carousel('next')
 });
 
 $('.option2').on('click', function () {
   var $opT = $(this);
   $('#status').css('stroke-dasharray', $opT.data('value'))
-  $('#carouselExampleIndicatorsTwo').carousel('next')
+  $('#carouselExampleIndicatorsThree').carousel('next')
 });
 
 $('.option3').on('click', function () {
   var $opTh = $(this);
   $('#status').css('stroke-dasharray', $opTh.data('value'))
-  $('#carouselExampleIndicatorsTwo').carousel('next')
+  $('#carouselExampleIndicatorsThree').carousel('next')
 });
 
 $('.option4').on('click', function () {
   var $opF = $(this);
   $('#status').css('stroke-dasharray', $opF.data('value'))
-  $('#carouselExampleIndicatorsTwo').carousel('next')
+  $('#carouselExampleIndicatorsThree').carousel('next')
 });
 
 $('.option5').on('click', function () {
   var $opFv = $(this);
   $('#status').css('stroke-dasharray', $opFv.data('value'))
-  $('#carouselExampleIndicatorsTwo').carousel('next')
+  $('#carouselExampleIndicatorsThree').carousel('next')
 });
 
 
 
-$('#carouselExampleIndicatorsTwo').on('slide.bs.carousel', function (e) {
+$('#carouselExampleIndicatorsThree').on('slide.bs.carousel', function (e) {
   // do something…
   $('.digit').text($(e.relatedTarget).attr('data-index'));
 });
