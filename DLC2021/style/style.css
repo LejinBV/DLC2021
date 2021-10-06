@@ -468,6 +468,21 @@ p {
   background-size: cover;
 }
 
+.teaser-video-wrap .video-poster.dlc-heroes {
+  background: url(../images/heroes.jpg);
+  background-size: cover;
+}
+
+.teaser-video-wrap .video-poster.dlc-winners {
+  background: url(../images/dlc-winners.jpg);
+  background-size: cover;
+}
+
+.teaser-video-wrap .video-poster.contribution {
+  background: url(../images/contribution.jpg);
+  background-size: cover;
+}
+
 .teaser-video-wrap .text-wrap {
   margin-top: auto;
   padding-bottom: 5rem;
