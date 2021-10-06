@@ -367,6 +367,21 @@ p{
       background: url(../images/activity-3.jpg);
       background-size: cover;
     }
+    
+    &.dlc-heroes{
+      background: url(../images/heroes.jpg);
+      background-size: cover;
+    }
+    
+    &.dlc-winners{
+      background: url(../images/dlc-winners.jpg);
+      background-size: cover;
+    }
+    
+    &.contribution{
+      background: url(../images/contribution.jpg);
+      background-size: cover;
+    }
   }
   .text-wrap{
     margin-top: auto;
