@@ -401,6 +401,12 @@ p{
     }
   }
 }
+#videos{
+  @media (max-width:767px) {
+    margin-bottom: 60px;
+  }
+  
+}
 
 .video-pp {
 	iframe {
