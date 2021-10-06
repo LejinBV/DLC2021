@@ -437,6 +437,10 @@ p {
   background: #00b4d8;
 }
 
+.teaser-video-wrap.sixth-activity {
+  background-color: #ef233c;
+}
+
 .teaser-video-wrap .video-poster {
   background: url(../images/collaboration-t2.png) right;
   background-size: cover;
