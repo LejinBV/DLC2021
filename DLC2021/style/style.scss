@@ -343,6 +343,9 @@ p{
 
 .teaser-video-wrap{
   background: $m-blue;
+  &.sixth-activity{
+    background-color: $s-red;
+  }
 
   .video-poster{
     background:url(../images/collaboration-t2.png) right;
